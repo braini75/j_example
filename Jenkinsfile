@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'echo "This is Build-Stage'
             }
         }
         stage('Test'){
             steps {
-                echo "This is a test"
+                echo "This is Test-Stage"
             }
         }       
     }
